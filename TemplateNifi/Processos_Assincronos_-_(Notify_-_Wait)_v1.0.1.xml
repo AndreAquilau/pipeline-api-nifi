@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.3">
+    <description></description>
+    <groupId>74acaa67-018b-1000-b9c1-2c656d01fc7c</groupId>
+    <name>Processos Assincronos - (Notify - Wait) v1.0.1</name>
+    <snippet>
+        <processGroups>
+            <id>0ca459df-a68a-3feb-0000-000000000000</id>
+            <parentGroupId>12f13b62-9e95-3aa1-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <versionedComponentId>0ca459df-a68a-3feb-924d-01d1214f9aa3</versionedComponentId>
+            <comments></comments>
+            <contents>
+                <connections>
+                    <id>434700dd-ac3a-3ecb-0000-000000000000</id>
+                    <parentGroupId>0ca459df-a68a-3feb-0000-000000000000</parentGroupId>
+                    <versionedComponentId>434700dd-ac3a-3ecb-a7ab-8255388066cc</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>0ca459df-a68a-3feb-0000-000000000000</groupId>
+                        <id>1a740c36-7bc1-381a-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>1a740c36-7bc1-381a-a581-71aa16cb0c4a</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>0ca459df-a68a-3feb-0000-000000000000</groupId>
+                        <id>37dd9190-3ae3-3a70-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>37dd9190-3ae3-3a70-942d-ef594377dda3</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>61a53562-188d-3c0a-0000-000000000000</id>
+                    <parentGroupId>0ca459df-a68a-3feb-0000-000000000000</parentGroupId>
+                    <versionedComponentId>61a53562-188d-3c0a-bacf-142a1a4bc508</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>0ca459df-a68a-3feb-0000-000000000000</groupId>
+                        <id>9f02d7ba-fc84-31a1-0000-000000000000</id>
+                        <type>FUNNEL</type>
+                        <versionedComponentId>9f02d7ba-fc84-31a1-8844-39be41f375d7</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>failure</selectedRelationships>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>0ca459df-a68a-3feb-0000-000000000000</groupId>
+                        <id>6856bec4-f198-3247-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>6856bec4-f198-3247-9d3c-bc93ebeab879</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>8d9888f6-2030-3e41-0000-000000000000</id>
+                    <parentGroupId>0ca459df-a68a-3feb-0000-000000000000</parentGroupId>
+                    <versionedComponentId>8d9888f6-2030-3e41-b312-a0913f7ba648</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>0ca459df-a68a-3feb-0000-000000000000</groupId>
+                        <id>6856bec4-f198-3247-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>6856bec4-f198-3247-9d3c-bc93ebeab879</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>0ca459df-a68a-3feb-0000-000000000000</groupId>
+                        <id>37dd9190-3ae3-3a70-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>37dd9190-3ae3-3a70-942d-ef594377dda3</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>f910d90f-856c-3528-0000-000000000000</id>
+                    <parentGroupId>0ca459df-a68a-3feb-0000-000000000000</parentGroupId>
+                    <versionedComponentId>f910d90f-856c-3528-8b82-2d71882ecb00</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>0ca459df-a68a-3feb-0000-000000000000</groupId>
+                        <id>9f02d7ba-fc84-31a1-0000-000000000000</id>
+                        <type>FUNNEL</type>
+                        <versionedComponentId>9f02d7ba-fc84-31a1-8844-39be41f375d7</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>expired</selectedRelationships>
+                    <selectedRelationships>failure</selectedRelationships>
+                    <selectedRelationships>success</selectedRelationships>
+                    <selectedRelationships>wait</selectedRelationships>
+                    <source>
+                        <groupId>0ca459df-a68a-3feb-0000-000000000000</groupId>
+                        <id>1a740c36-7bc1-381a-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>1a740c36-7bc1-381a-a581-71aa16cb0c4a</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <controllerServices>
+                    <id>d1bab7c3-c37d-340e-0000-000000000000</id>
+                    <parentGroupId>0ca459df-a68a-3feb-0000-000000000000</parentGroupId>
+                    <versionedComponentId>d1bab7c3-c37d-340e-8eb2-c114a8626d4f</versionedComponentId>
+                    <bulletinLevel>WARN</bulletinLevel>
+                    <bundle>
+                        <artifact>nifi-distributed-cache-services-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.23.2</version>
+                    </bundle>
+                    <comments></comments>
+                    <descriptors>
+                        <entry>
+                            <key>Port</key>
+                            <value>
+<name>Port</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Maximum Cache Entries</key>
+                            <value>
+<name>Maximum Cache Entries</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Eviction Strategy</key>
+                            <value>
+<name>Eviction Strategy</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Persistence Directory</key>
+                            <value>
+<name>Persistence Directory</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>SSL Context Service</key>
+                            <value>
+<identifiesControllerService>org.apache.nifi.ssl.RestrictedSSLContextService</identifiesControllerService>
+<name>SSL Context Service</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>maximum-read-size</key>
+                            <value>
+<name>maximum-read-size</name>
+                            </value>
+                        </entry>
+                    </descriptors>
+                    <name>DistributedMapCacheServer</name>
+                    <persistsState>false</persistsState>
+                    <properties>
+                        <entry>
+                            <key>Port</key>
+                            <value>4557</value>
+                        </entry>
+                        <entry>
+                            <key>Maximum Cache Entries</key>
+                            <value>10000</value>
+                        </entry>
+                        <entry>
+                            <key>Eviction Strategy</key>
+                            <value>Least Frequently Used</value>
+                        </entry>
+                        <entry>
+                            <key>Persistence Directory</key>
+                        </entry>
+                        <entry>
+                            <key>SSL Context Service</key>
+                        </entry>
+                        <entry>
+                            <key>maximum-read-size</key>
+                            <value>1 MB</value>
+                        </entry>
+                    </properties>
+                    <state>ENABLED</state>
+                    <type>org.apache.nifi.distributed.cache.server.map.DistributedMapCacheServer</type>
+                </controllerServices>
+                <controllerServices>
+                    <id>db15fa93-dfee-38d8-0000-000000000000</id>
+                    <parentGroupId>0ca459df-a68a-3feb-0000-000000000000</parentGroupId>
+                    <versionedComponentId>db15fa93-dfee-38d8-9269-81c62f52e7b7</versionedComponentId>
+                    <bulletinLevel>WARN</bulletinLevel>
+                    <bundle>
+                        <artifact>nifi-distributed-cache-services-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.23.2</version>
+                    </bundle>
+                    <comments></comments>
+                    <descriptors>
+                        <entry>
+                            <key>Server Hostname</key>
+                            <value>
+<name>Server Hostname</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Server Port</key>
+                            <value>
+<name>Server Port</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>SSL Context Service</key>
+                            <value>
+<identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+<name>SSL Context Service</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>Communications Timeout</key>
+                            <value>
+<name>Communications Timeout</name>
+                            </value>
+                        </entry>
+                    </descriptors>
+                    <name>DistributedMapCacheClientService</name>
+                    <persistsState>false</persistsState>
+                    <properties>
+                        <entry>
+                            <key>Server Hostname</key>
+                            <value>localhost</value>
+                        </entry>
+                        <entry>
+                            <key>Server Port</key>
+                            <value>4557</value>
+                        </entry>
+                        <entry>
+                            <key>SSL Context Service</key>
+                        </entry>
+                        <entry>
+                            <key>Communications Timeout</key>
+                            <value>30 secs</value>
+                        </entry>
+                    </properties>
+                    <state>ENABLED</state>
+                    <type>org.apache.nifi.distributed.cache.client.DistributedMapCacheClientService</type>
+                </controllerServices>
+                <funnels>
+                    <id>9f02d7ba-fc84-31a1-0000-000000000000</id>
+                    <parentGroupId>0ca459df-a68a-3feb-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>641.9999348681878</x>
+                        <y>664.4999483218908</y>
+                    </position>
+                    <versionedComponentId>9f02d7ba-fc84-31a1-8844-39be41f375d7</versionedComponentId>
+                </funnels>
+                <processors>
+                    <id>1a740c36-7bc1-381a-0000-000000000000</id>
+                    <parentGroupId>0ca459df-a68a-3feb-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>816.0</x>
+                        <y>304.0</y>
+                    </position>
+                    <versionedComponentId>1a740c36-7bc1-381a-a581-71aa16cb0c4a</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.23.2</version>
+                    </bundle>
+                    <config>
+                        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>release-signal-id</key>
+<value>
+    <name>release-signal-id</name>
+</value>
+                            </entry>
+                            <entry>
+<key>target-signal-count</key>
+<value>
+    <name>target-signal-count</name>
+</value>
+                            </entry>
+                            <entry>
+<key>signal-counter-name</key>
+<value>
+    <name>signal-counter-name</name>
+</value>
+                            </entry>
+                            <entry>
+<key>wait-buffer-count</key>
+<value>
+    <name>wait-buffer-count</name>
+</value>
+                            </entry>
+                            <entry>
+<key>releasable-flowfile-count</key>
+<value>
+    <name>releasable-flowfile-count</name>
+</value>
+                            </entry>
+                            <entry>
+<key>expiration-duration</key>
+<value>
+    <name>expiration-duration</name>
+</value>
+                            </entry>
+                            <entry>
+<key>distributed-cache-service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.distributed.cache.client.AtomicDistributedMapCacheClient</identifiesControllerService>
+    <name>distributed-cache-service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>attribute-copy-mode</key>
+<value>
+    <name>attribute-copy-mode</name>
+</value>
+                            </entry>
+                            <entry>
+<key>wait-mode</key>
+<value>
+    <name>wait-mode</name>
+</value>
+                            </entry>
+                            <entry>
+<key>wait-penalty-duration</key>
+<value>
+    <name>wait-penalty-duration</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>release-signal-id</key>
+<value>10001</value>
+                            </entry>
+                            <entry>
+<key>target-signal-count</key>
+<value>1</value>
+                            </entry>
+                            <entry>
+<key>signal-counter-name</key>
+                            </entry>
+                            <entry>
+<key>wait-buffer-count</key>
+<value>1</value>
+                            </entry>
+                            <entry>
+<key>releasable-flowfile-count</key>
+<value>1</value>
+                            </entry>
+                            <entry>
+<key>expiration-duration</key>
+<value>10 min</value>
+                            </entry>
+                            <entry>
+<key>distributed-cache-service</key>
+<value>db15fa93-dfee-38d8-0000-000000000000</value>
+                            </entry>
+                            <entry>
+<key>attribute-copy-mode</key>
+<value>keeporiginal</value>
+                            </entry>
+                            <entry>
+<key>wait-mode</key>
+<value>wait</value>
+                            </entry>
+                            <entry>
+<key>wait-penalty-duration</key>
+                            </entry>
+                        </properties>
+                        <retryCount>10</retryCount>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>Wait</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>expired</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>failure</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>wait</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.Wait</type>
+                </processors>
+                <processors>
+                    <id>37dd9190-3ae3-3a70-0000-000000000000</id>
+                    <parentGroupId>0ca459df-a68a-3feb-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>472.0</x>
+                        <y>-8.0</y>
+                    </position>
+                    <versionedComponentId>37dd9190-3ae3-3a70-942d-ef594377dda3</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.23.2</version>
+                    </bundle>
+                    <config>
+                        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>File Size</key>
+<value>
+    <name>File Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>
+    <name>Batch Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Data Format</key>
+<value>
+    <name>Data Format</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Unique FlowFiles</key>
+<value>
+    <name>Unique FlowFiles</name>
+</value>
+                            </entry>
+                            <entry>
+<key>generate-ff-custom-text</key>
+<value>
+    <name>generate-ff-custom-text</name>
+</value>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>
+    <name>character-set</name>
+</value>
+                            </entry>
+                            <entry>
+<key>mime-type</key>
+<value>
+    <name>mime-type</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>File Size</key>
+<value>0B</value>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>1</value>
+                            </entry>
+                            <entry>
+<key>Data Format</key>
+<value>Text</value>
+                            </entry>
+                            <entry>
+<key>Unique FlowFiles</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>generate-ff-custom-text</key>
+<value>teste</value>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>UTF-8</value>
+                            </entry>
+                            <entry>
+<key>mime-type</key>
+                            </entry>
+                        </properties>
+                        <retryCount>10</retryCount>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>1 min</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>GenerateFlowFile</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
+                </processors>
+                <processors>
+                    <id>6856bec4-f198-3247-0000-000000000000</id>
+                    <parentGroupId>0ca459df-a68a-3feb-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>153.99993486818778</x>
+                        <y>304.49994832189077</y>
+                    </position>
+                    <versionedComponentId>6856bec4-f198-3247-9d3c-bc93ebeab879</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.23.2</version>
+                    </bundle>
+                    <config>
+                        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>release-signal-id</key>
+<value>
+    <name>release-signal-id</name>
+</value>
+                            </entry>
+                            <entry>
+<key>signal-counter-name</key>
+<value>
+    <name>signal-counter-name</name>
+</value>
+                            </entry>
+                            <entry>
+<key>signal-counter-delta</key>
+<value>
+    <name>signal-counter-delta</name>
+</value>
+                            </entry>
+                            <entry>
+<key>signal-buffer-count</key>
+<value>
+    <name>signal-buffer-count</name>
+</value>
+                            </entry>
+                            <entry>
+<key>distributed-cache-service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.distributed.cache.client.AtomicDistributedMapCacheClient</identifiesControllerService>
+    <name>distributed-cache-service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>attribute-cache-regex</key>
+<value>
+    <name>attribute-cache-regex</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>release-signal-id</key>
+<value>10001</value>
+                            </entry>
+                            <entry>
+<key>signal-counter-name</key>
+<value>default</value>
+                            </entry>
+                            <entry>
+<key>signal-counter-delta</key>
+<value>1</value>
+                            </entry>
+                            <entry>
+<key>signal-buffer-count</key>
+<value>1</value>
+                            </entry>
+                            <entry>
+<key>distributed-cache-service</key>
+<value>db15fa93-dfee-38d8-0000-000000000000</value>
+                            </entry>
+                            <entry>
+<key>attribute-cache-regex</key>
+                            </entry>
+                        </properties>
+                        <retryCount>10</retryCount>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>Notify</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>failure</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.Notify</type>
+                </processors>
+            </contents>
+            <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+            <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+            <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+            <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+            <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+            <name>Processos Assincronos - (Notify - Wait)</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>11/04/2023 01:44:04 BOT</timestamp>
+</template>

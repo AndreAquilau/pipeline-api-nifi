@@ -114,7 +114,7 @@ app.MapGet("/status", (HttpContext context) =>
     return new { status = res };
 });
 
-app.MapPost("/logout", (HttpContext context) =>
+app.MapDelete("/logout", (HttpContext context) =>
 {
     Thread.Sleep(5000);
 
@@ -135,7 +135,7 @@ app.MapPost("/logout", (HttpContext context) =>
 
     Console.WriteLine("");
 
-    return "";
+    return new { teste = 5000 };
 })
 .Accepts<string>("application/x-www-form-urlencoded");
 
